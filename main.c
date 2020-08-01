@@ -5,7 +5,7 @@
  * Created on April 1, 2020, 4:42 PM
  */
 
-#define F_CPU 8000000UL // 8 MHz internal
+#define F_CPU 8000000 // 8 MHz internal
 
 //#include <xc.h>
 #include <avr/io.h>
@@ -17,7 +17,7 @@
 #define  setbit(var, bit)    ((var) |= (1 << (bit)))
 #define  clrbit(var, bit)    ((var) &= ~(1 << (bit)))
 
-#define LED         4
+#define LED         PB4
 
 #define PIN_SER     PB0     // Serial Input
 #define PIN_RCLK    PB1     // Register Clock / Latch
